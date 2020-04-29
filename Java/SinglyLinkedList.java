@@ -1,4 +1,8 @@
-package lec13;
+//Functions for Singly Linked List assuming the following structure
+// public class Node{
+//	public int element;
+//	public Node next;
+// }
 
 public class SinglyLinkedList {
 	public Node head = null;
