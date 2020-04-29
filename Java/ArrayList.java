@@ -5,19 +5,17 @@ public class ArrayList {
        
     }
     
-    // a method that takes an ArrayList of String and a char
-    // it returns an ArrayList containing all the String that begins with the 
-    // specified char
-
-    public static ArrayList<String> getWords(ArrayList<String> list, char c) {
-        ArrayList<String> beginsWithC = new ArrayList<String>();
+    
+    // returns an ArrayList containing all the String that begins with the char
+    public static ArrayList<String> startWithC(ArrayList<String> list, char c) {
+        ArrayList<String> temp = new ArrayList<String>();
         
         for(int i=0; i<list.size(); i++) {
             String element = list.get(i);
             if(element.charAt(0)==c) {
-                beginsWithC.add(element);
+                temp.add(element);
             }
         }
-        return beginsWithC;
+        return temp;
     }
 }
