@@ -1,3 +1,5 @@
+//function for Binary Search iteratively and recursively
+
 import java.util.Arrays;
 
 public class binarySearch {
