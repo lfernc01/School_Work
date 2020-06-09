@@ -28,3 +28,22 @@ FILE *bd = fopen("filename.csv", "a+");
 }
 }
 
+
+//Read numbers from file, and store them in different files
+int main(int argc, char* argv[]){
+  char *filename = argv[1];
+  FILE *data = fopen(filename,"rt");
+  FILE *file = fopen("file.txt", "wt");
+  char line[50];
+
+  //read numbers from file given
+  fgets(line,50,data);
+  while(!feof(data)){
+      fputs(line,file);
+      fgets(line,50,data);
+  }
+  fclose(file);
+  fclose(data);
+
+}
+
