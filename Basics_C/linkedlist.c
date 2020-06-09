@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "utils.h"
 
 struct LinkedList *head = NULL;
   struct LinkedList {
